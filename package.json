@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "author": "Cullen Lee<cullen@mitech.ai>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "vercel_install": "npm i -g cross-env && cross-env-shell \"$PREINSTALL_CMD\"",
+    "package_init": "git submodule update --init --recursive && npm install",
+    "package_update": "git submodule update --remote --recursive && npm install"
+  },
+  "dependencies": {
+    "@iconify/react": "^5.0.1",
+    "@mitech/shared-components": "file:packages/shared-components",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.5",
+    "axios": "^1.6.5",
+    "js-cookie": "^3.0.5",
+    "next": "^14.2.3",
+    "react-toastify": "^10.0.5",
+    "sharp": "*",
+    "zod": "^3.23.7"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "*",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "autoprefixer": "*",
+    "eslint": "*",
+    "eslint-config-next": "*",
+    "postcss": "*",
+    "prettier": "*",
+    "tailwindcss": "*",
+    "typescript": "*"
+  }
+}
