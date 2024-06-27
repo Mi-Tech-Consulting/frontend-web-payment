@@ -17,7 +17,7 @@ export function RecaptchaDialog() {
       />
       <div className="flex flex-col items-center gap-6 py-4">
         <div className="text-3xl font-bold text-default-700">
-          You`&apos;`re not a robot, right?
+          You&apos;re not a robot, right?
         </div>
         <p className="text-md font-medium">
           To connect a financial, please confirm you are 100% human.
