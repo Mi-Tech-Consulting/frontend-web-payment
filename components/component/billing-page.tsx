@@ -45,7 +45,7 @@ export function BillingPage() {
         <div className="container px-4 md:px-6 flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm font-bold text-default-700">
-              Don't see your financial? We support over 14,000 financial
+              Don`&apos;`t see your financial? We support over 14,000 financial
               institution.{' '}
               <Dialog>
                 <DialogTrigger asChild>

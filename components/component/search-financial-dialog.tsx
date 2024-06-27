@@ -6,7 +6,8 @@ import { Input } from '@nextui-org/react';
 
 const SearchFinancialDialog = () => {
   const [input, setInput] = useState('');
-  const [filteredFinancialData, setFilteredFinancialData] = useState(financialList);
+  const [filteredFinancialData, setFilteredFinancialData] =
+    useState(financialList);
 
   const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     const text = event.target.value;
@@ -40,6 +41,7 @@ const SearchFinancialDialog = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-8 overflow-auto max-h-[70vh]">
           {filteredFinancialData.map((financialItem) => (
             <BillingCard
+              key={financialItem.id}
               image={financialItem.image}
               className="shadow-none border-1 border-default-200 rounded-small object-contain flex justify-center items-center min-h-24 p-4"
             />
